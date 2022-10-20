@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    html {
+      height: 100%;
+    }
+
+
+    body {
+      height: 100%;
+      background: url("background-image.webp") top;
+      background-size: cover;
+      overflow: hidden;
+
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .text h1 {
+      color: #011718;
+      margin-top: -50px;
+      margin-bottom: 1em;
+      font-size: 5em;
+      text-align: center;
+      text-shadow: -5px 5px 0px rgba(0, 0, 0, 0.7),
+        -10px 10px 0px rgba(0, 0, 0, 0.4), -15px 15px 0px rgba(0, 0, 0, 0.2);
+      font-family: monospace;
+      font-weight: bold;
+    }
+
+    .text h2 {
+      color: black;
+      font-size: 3em;
+      text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.7);
+      text-align: center;
+      /* margin-top: -150px; */
+      /* margin-bottom: 2em; */
+      font-family: monospace;
+      font-weight: bold;
+    }
+
+    .text h3 {
+      color: cadetblue;
+      margin-left: 30px;
+      font-size: 2.4em;
+      text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.7);
+      margin-top: -40px;
+      font-family: monospace;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .torch {
+      margin: -150px 0 0 -150px;
+      width: 200px;
+      height: 200px;
+      box-shadow: 0 0 0 9999em #000000f7;
+      opacity: 1;
+      border-radius: 50%;
+      position: fixed;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .torch:after {
+      content: "";
+      display: block;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      box-shadow: inset 0 0 40px 2px #000, 0 0 20px 4px rgba(13, 13, 10, 0.2);
+    }
+
+    img:hover {
+      transition: all 0.25s;
+      transform: scale(1.2);
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta charset="utf-8">
+
+  <title>404 FUNNY</title>
+</head>
+
+
+<body>
+  <div class="text">
+    <h1>I could bring you flowers, I could give you gifts, but nothing in this world can truly show my love for you.
+      Happy
+      Vietnamese Women’s Day! </h1>
+    <h2>❤️hẹn ngày gặp nhau nhaaaaaa💐🌺🌹</h2>
+    <h3> em sẽ tặng all 1 ngày quên đường zề 🥹🥹 <img src="./classToeic.jpg" style="width: 100px;height:80px" alt="">
+    </h3>
+  </div>
+
+  <div class="torch" style="top:482px; left:426px"></div>
+
+
+  <script type="text/javascript">
+    $(document).mousemove(function (event) {
+      $(".torch").css({
+        top: event.pageY,
+        left: event.pageX,
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
